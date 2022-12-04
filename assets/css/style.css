@@ -1,0 +1,298 @@
+:root{
+    --maincolor:  #5ABFAA;
+    --secondarycolor: #F8F9FA;
+    --lightdark: #7D6F80;
+    --black: #000;
+}
+
+.btn{
+    border-radius: .8rem;
+    padding: .9rem 1.8rem;
+}
+
+/* top nav */
+#topnav{
+    background: var(--maincolor) !important;
+}
+
+/* nav bar */
+.navbar{
+    background: var(--secondarycolor) !important;
+}
+
+.navbar .navbar-brand img{
+    width: 20% !important;
+}
+
+.navbar .navbar-brand .brand-text h4{
+color: var(--maincolor) !important;
+font-size: 1.7rem;
+font-weight: bold;
+/* border: 2px solid red; */
+margin: 0;
+}
+
+.navbar .navbar-brand:hover .brand-text h4{
+    color: var(--black)!important;
+    }
+
+.navbar .navbar-brand .brand-text .lead{
+    font-size: .7rem;
+    color: var(--lightdark) !important;
+    /* border: 2px solid red; */
+    margin: 0;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: var(--lightdark) !important;
+    padding: 0 1rem;
+}
+.navbar .navbar-nav .nav-link.active{
+    color: var(--maincolor)!important;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--maincolor)!important;
+}
+
+.navbar .navbar-nav .nav-link.btn{
+    border: 2px solid var(--black) !important;
+    padding: .7rem 1.7rem;
+    border-radius: 2rem;
+}
+
+/* sliders */
+#sliders .carousel{
+
+}
+
+
+/* #sliders .carousel .carousel-inner .carousel-item{
+    border: 3px solid red;
+} */
+
+#sliders .carousel .carousel-inner .carousel-item img{
+    height: 90vh;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 51% 100%, 0 100%);
+}
+
+#sliders .carousel .carousel-inner .carousel-item .carousel-caption{
+    /* border: 3px solid red; */
+    width: 100%;
+    text-align: end;
+    color: var(--black);
+    right: 0;
+    left: 0;
+    padding: 0 3rem;
+}
+
+#sliders .carousel .carousel-inner .carousel-item .carousel-caption h3{
+    color: var(--lightdark);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#sliders .carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    background-color: var(--lightdark) !important;
+    padding: 3rem;
+    border-radius: 80%;
+}
+
+#sliders .carousel-control-next-icon:hover, 
+.carousel-control-prev-icon:hover{
+    background-color: var(--maincolor) !important;
+}
+
+/* welcome */
+#welcome{
+    padding: 5rem 0;
+    /* border: 2px solid red; */
+}
+
+#welcome .intro h3{
+    font-weight: bold;
+    font-size: 2.7rem;
+    color: var(--lightdark);
+}
+
+#welcome .card{
+    border: none;
+}
+#welcome .card:hover{
+    transition: all 1s ease-in-out;
+    box-shadow: 0 .4rem 1rem var(--lightdark);
+}
+
+#welcome .card img{
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+    width: 50%;
+    margin: .6rem auto;
+}
+#welcome .card h4{
+   color: var(--maincolor);
+}
+#welcome .card h4>span{
+   font-weight: bolder;
+}
+
+#welcome .card:hover img{
+    transform: scale(1);
+}
+
+/* story */
+#story{
+    background: #F0F8FF;
+    padding: 5rem 0;
+}
+
+#story .card{
+    border-radius: 1.5rem;
+}
+
+#story .card h3{
+    color: #5A6F80;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#story .card h5{
+    color: var(--maincolor);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+#story .card-img{
+height: 85vh;
+
+}
+#story .card-img img{
+height: 100%;
+border-radius: 1.5rem;
+}
+
+#story .card ul{
+    /* border: 2px solid red; */
+    list-style: none;
+    padding-left: 0;
+}
+#story .card ul li::before{
+    content:'\F26E';
+    font-family: 'bootstrap-icons';
+    background-color: var(--maincolor);
+    border-radius: 50%;
+  margin-right: .4rem;
+    /* border: 2px solid blue; */
+    /* list-style: none; */
+}
+
+#story .card h2{
+    color: var(--maincolor);
+    font-size: 2.9rem;
+    font-weight: bold;
+}
+
+/* Sandy */
+#Sandy{
+    background: #F0F8FF;
+    padding: 5rem 0;
+}
+
+#sandy .card{
+    padding-top: 3rem;
+}
+
+#sandy .card h3{
+    color: #5A6F80;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#sandy .card h5{
+    color: var(--lightdark);
+    font-size: 1.2rem;
+}
+#sandy .card p{
+    /* color: var(--lightdark); */
+    font-size: 1rem;
+}
+
+#sandy .card-img{
+    /* border-radius: 2rem; */
+    height: 100%;
+    padding: 5rem 5rem;
+    /* border: 2px solid red; */
+}
+
+#sandy .card .card-img{
+    /* border: 2px solid red; */
+
+}
+
+#sandy .card h3{
+    color: #5A6F80;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+
+@media (max-width:520px){
+    /* #sliders .carousel{
+
+    } */
+    
+    /* #sliders .carousel .carousel-inner .carousel-item{
+        border: 3px solid red;
+    } */
+    
+        #sliders .carousel .carousel-inner .carousel-item img{
+            height: 65vh;
+            clip-path: polygon(0 0, 100% 0, 100% 33%, 51% 100%, 0 100%);
+        }
+        
+        #sliders .carousel .carousel-inner .carousel-item .carousel-caption{
+            /* border: 3px solid red; */
+            background: var(--black);
+            opacity: .8;
+            width: 100%;
+            text-align: center;
+            /* color: var(--black);
+            right: 0;
+            left: 0; */
+            /* padding: 0 7rem; */
+            padding: 1.4rem 0;
+            backdrop-filter: blur(5px);
+        }
+        
+        #sliders .carousel .carousel-inner .carousel-item .carousel-caption h3{
+            color: var(--lightdark);
+            font-size: 2rem;
+            font-weight: bold;
+            width: 100%;
+            margin: 0;
+        }
+        
+        #sliders .carousel-control-next-icon, .carousel-control-prev-icon {
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: 100% 100%;
+            background-color: var(--lightdark) !important;
+            padding: 1rem;
+            border-radius: 50%;
+            border-radius: 1rem !important;
+        }
+        
+        #sliders .carousel-control-next-icon:hover, 
+        .carousel-control-prev-icon:hover{
+            background-color: var(--maincolor) !important;
+        }   
+}
